@@ -1,5 +1,6 @@
 #include "population.h"
 #include "individual.h"
+#include <vector>
 
 namespace population
 {
