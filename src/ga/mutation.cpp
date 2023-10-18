@@ -1,6 +1,7 @@
 #include "mutation.h"
 #include "fitness.h"
 #include "../tools/tools.h"
+#include <cstdint>
 
 namespace mutation
 {
