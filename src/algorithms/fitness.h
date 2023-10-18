@@ -1,5 +1,5 @@
-#ifndef GA_GA_FITNESS_H_
-#define GA_GA_FITNESS_H_
+#ifndef GA_ALGORITHMS_FITNESS_H_
+#define GA_ALGORITHMS_FITNESS_H_
 #include <vector>
 
 namespace fitness
@@ -9,4 +9,4 @@ namespace fitness
     double targetFunction(const double &x);
 } // namespace fitness
 
-#endif // GA_GA_FITNESS_H_
+#endif // GA_ALGORITHMS_FITNESS_H_
