@@ -1,6 +1,7 @@
 #include "mutation.h"
 #include "fitness.h"
 #include "../tools/tools.h"
+#include "../tools/config.h"
 #include <cstdint>
 
 namespace mutation
@@ -28,7 +29,7 @@ namespace mutation
 
         while (mutatedFitness >= worstFitness)
         {
-            mutatedValue = tools::getRandomNumber(0, 100);
+            mutatedValue = tools::getRandomNumber(config::minY, config::maxY);
             mutatedFitness = fitness::calculatePoint(worstPoint * 0.1, mutatedValue);
         }
         

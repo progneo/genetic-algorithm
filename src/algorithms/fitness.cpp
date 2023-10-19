@@ -1,4 +1,5 @@
 #include "fitness.h"
+#include "../tools/config.h"
 #include <math.h>
 #include <vector>
 
@@ -12,17 +13,13 @@ namespace fitness
         for (int i = 0; i < length; i++)
         {
             double x = i * 0.1;
-            fitness += std::abs(targetFunction(x) - individual[i]);
+            fitness += std::abs(config::targetFunction(x) - individual[i]);
         }
 
         return fitness;
     }
     double calculatePoint(const double &x, const double &point)
     {
-        return std::abs(targetFunction(x) - point);
-    }
-    double targetFunction(const double &x)
-    {
-        return x * x;
+        return std::abs(config::targetFunction(x) - point);
     }
 } // namespace fitness

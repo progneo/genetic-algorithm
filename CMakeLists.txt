@@ -16,6 +16,7 @@ set(SOURCE_EXE src/main.cpp)
 
 set(SOURCE_LIB
     src/tools/tools.cpp
+    src/tools/config.cpp
     src/algorithms/crossover.cpp
     src/algorithms/fitness.cpp
     src/algorithms/ga.cpp
