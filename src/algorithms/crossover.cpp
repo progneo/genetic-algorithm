@@ -5,8 +5,9 @@ namespace crossover
 {
     std::vector<double> crossover(std::vector<double> parent1, std::vector<double> parent2)
     {
-        int crossoverPoint = tools::getRandomNumber(1, parent1.size() - 1);
-        for (int i = crossoverPoint; i < parent1.size(); i++)
+        int length = parent1.size();
+        int crossoverPoint = tools::getRandomNumber(1, length - 1);
+        for (int i = crossoverPoint; i < length; i++)
         {
             std::swap(parent1[i], parent2[i]);
         }

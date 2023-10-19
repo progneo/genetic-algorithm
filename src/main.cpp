@@ -33,8 +33,8 @@ int main()
     std::vector<double> x = linspace(0, 10, 101);
     
     auto p = plot(x, individual, x, target, "--");
-    title("Result");
-    xlabel("x");
+    p[0]->line_width(2);
+    p[1]->line_width(2);
 
     show();
     return 0;
