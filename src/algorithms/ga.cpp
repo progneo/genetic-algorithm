@@ -31,8 +31,8 @@ namespace ga
 
             for (int i = 10; i < populationSize; i += 2)
             {
-                population[i] = crossover::crossover(population[i - 9], population[i - 9]);
-                population[i + 1] = crossover::crossover(population[i - 8], population[i - 10]);
+                population[i] = crossover::crossover(population[i - 9], population[i - 10]);
+                population[i + 1] = crossover::crossover(population[i - 10], population[i - 9]);
             }
 
             for (int i = 0; i < populationSize; i += 1)
